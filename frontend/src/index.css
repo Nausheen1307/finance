@@ -1,0 +1,92 @@
+/* Global Styles */
+body {
+  background-color: #f8f9fa; /* Light Gray Background */
+  color: #1e2a38; /* Dark Blue Text */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1e2a38 !important;
+}
+
+.navbar a {
+  color: #f8f9fa !important;
+}
+
+.navbar a:hover {
+  color: #17a2b8 !important;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #1e2a38;
+  color: #ffffff;
+  width: 250px;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar a {
+  display: block;
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  background-color: #17a2b8;
+}
+
+/* Dashboard Cards */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card-title {
+  color: #1e2a38;
+  font-weight: 600;
+}
+
+.card-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #17a2b8;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #138496;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,71 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa; /* Light background */
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px; /* Fixed Sidebar Width */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1E2A38; /* Dark Blue */
+  color: white;
+  padding-top: 20px;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar Links */
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #293846;
+}
+
+/* Main Content Wrapper */
+.main-content {
+  margin-left: 290px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+
+/* Navbar Styling */
+.navbar {
+  background-color: #1E2A38; /* Dark Blue */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #f1c40f; /* Gold Hover */
+}

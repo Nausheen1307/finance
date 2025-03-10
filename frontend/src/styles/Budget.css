@@ -1,0 +1,99 @@
+/* Budget Container */
+.budget-container {
+    margin-left: 60px; /* Reduced margin to bring content closer to sidebar (60px as requested) */
+    margin-top: 60px; /* Match navbar height */
+    padding: 25px; /* Increased padding for more space */
+    width: calc(100% - 60px); /* Adjust width dynamically for reduced sidebar margin */
+    min-height: calc(100vh - 60px); /* Full viewport height minus navbar */
+    height: 100%; /* Ensure full height */
+    background-color: #f8f9fa; /* Light gray background for consistency */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+}
+
+/* Budget Heading */
+.budget-heading {
+    font-size: 30px; /* Larger heading for emphasis */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+/* Budget Table */
+.budget-table {
+    background-color: white;
+    border-radius: 14px; /* Slightly larger radius for modern look */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Larger shadow for prominence */
+    height: calc(100% - 60px); /* Increased height to fill more space, minus padding (30px top + 30px bottom) */
+    overflow-y: auto; /* Enable vertical scrolling within table if needed */
+}
+
+.budget-table th {
+    background-color: #007bff; /* Blue header for professionalism */
+    color: white;
+    font-weight: bold;
+    padding: 18px; /* Increased padding for larger headers */
+    text-align: center;
+}
+
+.budget-table td {
+    padding: 18px; /* Increased padding for larger cells */
+    text-align: center;
+    vertical-align: middle;
+}
+
+.budget-table tr {
+    transition: background-color 0.3s ease;
+}
+
+.budget-table tr:hover {
+    background-color: #f1f1f1; /* Light gray hover effect */
+}
+
+/* Progress Bar Styling */
+.progress {
+    height: 30px; /* Taller progress bar for better visibility */
+    font-size: 18px; /* Larger text for percentage */
+    border-radius: 14px; /* Match table border radius */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .budget-container {
+        margin-left: 0;
+        width: 100%;
+        min-height: calc(100vh - 60px); /* Full height on mobile, minus navbar */
+    }
+
+    .budget-table {
+        height: auto; /* Remove fixed height on smaller screens */
+    }
+
+    .budget-table th,
+    .budget-table td {
+        padding: 12px; /* Reduced padding on smaller screens */
+    }
+
+    .budget-heading {
+        font-size: 24px; /* Slightly smaller heading on medium screens */
+    }
+
+    .progress {
+        height: 22px; /* Smaller progress bar on medium screens */
+        font-size: 14px; /* Smaller text for percentage */
+    }
+}
+
+@media (max-width: 768px) {
+    .budget-heading {
+        font-size: 20px; /* Even smaller heading on very small screens */
+    }
+
+    .budget-table {
+        font-size: 14px; /* Smaller text on very small screens */
+    }
+
+    .progress {
+        height: 18px; /* Smaller progress bar on mobile */
+        font-size: 12px; /* Smaller text for percentage */
+    }
+}

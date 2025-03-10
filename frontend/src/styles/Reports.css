@@ -1,0 +1,136 @@
+/* Reports Container */
+.reports-container {
+    margin-left: 60px; /* Match sidebar margin as requested */
+    margin-top: 60px; /* Match navbar height */
+    width: calc(100% - 60px); /* Adjust width dynamically for sidebar */
+    min-height: calc(100vh - 60px); /* Full viewport height minus navbar */
+    background-color: #f8f9fa; /* Light gray background for consistency */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+}
+
+/* Reports Heading */
+.reports-heading {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    display: inline; /* Ensure heading behaves as inline for alignment */
+}
+
+/* Date Range Select */
+.date-range-select {
+    width: 200px; /* Fixed width for consistency */
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.date-range-select:focus {
+    border-color: #007bff;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* Financial Summary Card */
+.financial-summary-card {
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensure it fills the column height */
+    width: 30%;
+    padding: 20px;
+}
+
+.summary-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.summary-item {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Chart Container */
+.chart-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Fixed height for the chart container */
+    width: 100%; /* Allow full width, constrained by max-width in chart options */
+    max-width: 600px; /* Limit maximum width to prevent excessive growth */
+    overflow-y: auto; /* Enable scrolling if chart exceeds height */
+}
+
+.chart-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .reports-container {
+        margin-left: 0;
+        width: 100%;
+        min-height: calc(100vh - 60px);
+    }
+
+    .reports-heading {
+        font-size: 24px;
+    }
+
+    .date-range-select {
+        width: 180px;
+        font-size: 14px;
+    }
+
+    .financial-summary-card, .chart-container {
+        height: auto; /* Remove fixed height on medium screens */
+        margin-bottom: 20px;
+    }
+
+    .chart-container {
+        max-width: 100%; /* Full width on medium screens */
+        height: 300px; /* Smaller height on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .reports-heading {
+        font-size: 20px;
+        display: block; /* Stack heading on mobile */
+    }
+
+    .date-range-select {
+        width: 150px;
+        font-size: 12px;
+        margin-top: 10px; /* Add margin for stacking on mobile */
+    }
+
+    .financial-summary-card, .chart-container {
+        padding: 15px;
+    }
+
+    .summary-title, .chart-title {
+        font-size: 18px;
+    }
+
+    .summary-item {
+        font-size: 14px;
+    }
+
+    .chart-container {
+        height: 250px; /* Smaller height on mobile */
+        max-width: 100%; /* Full width on mobile */
+    }
+}

@@ -1,0 +1,51 @@
+/* About Page Container */
+.about-container {
+    margin-left: 60px; /* Align with the sidebar */
+    margin-top: 60px; /* Align with the navbar */
+    width: calc(100% - 80px); /* Full width minus sidebar */
+    min-height: calc(100vh - 120px);
+    background-color: #f8f9fa;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* About Header */
+.about-header {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* About Card */
+.about-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+/* List */
+.about-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-card li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+.about-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.about-card a:hover {
+    text-decoration: underline;
+}
